@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-container
-        image: hello-python
-        imagePullPolicy: Never
+        image: hello-python:1.0
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
